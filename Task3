@@ -1,0 +1,23 @@
+The management team want to target improvements in Meal and Laundry service in Europe (EMEA) and Latin America (LATAM).
+
+Write a query to return the description of the service, the id and location of the branch, the id of the request as request_id and the rating for the services and locations of interest to the management team.
+
+Your output should be a DataFrame named 'target_hotels'.
+
+Use the original branch table, not the output of task 1.
+
+SELECT 
+    s.description,
+    b.id AS branch_id,
+    b.location,
+    r.id AS request_id,
+    r.rating
+FROM 
+    request r
+JOIN 
+    service s ON r.service_id = s.id
+JOIN 
+    branch b ON r.branch_id = b.id
+WHERE 
+    (LOWER(s.description) LIKE '%meal%' OR LOWER(s.description) LIKE '%laundry%')
+    AND b.location IN ('EMEA', 'LATAM');
