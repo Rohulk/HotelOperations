@@ -10,4 +10,3 @@ You are working with the Head of Operations to identify possible causes and hote
 Data
 The following schema diagram shows the tables available. You have only been provided with data where customers provided a feedback rating.
 
-![image alt](https://media.discordapp.net/attachments/1318359060336087171/1401031049932308500/877c19bd-993b-4277-ad04-cefe03ba3542.png?ex=688ecb58&is=688d79d8&hm=ec3c4f683529abf51f324b33fe773e9fc22f6ae228185d0374f5ad62ea5a7525&=&format=webp&quality=lossless)
